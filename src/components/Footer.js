@@ -3,12 +3,13 @@ import React from 'react';
 function Footer() {
   return (
     <footer style={styles.footer}>
-      <hr style={{
-          width: '100%',
-          maxWidth: '800px',
-          borderTop: '1px solid #eee',
-          margin: '10rem auto 8rem auto'
-        }} />
+      <hr
+          style={{
+            width: '100%',
+            maxWidth: '800px',
+            borderTop: '1px solid #eee',
+            margin: '3rem auto 2rem auto',
+          }}/>
 
       <div style={styles.grid}>
         <div style={styles.column}>
@@ -48,14 +49,14 @@ const styles = {
   },
   grid: {
     display: 'flex',
-    justifyContent: 'flex-end', // 오른쪽 정렬
+    justifyContent: 'flex-end',
     gap: '3rem',
     marginRight: '2rem',
   },
   column: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-start', // column 텍스트 왼쪽 정렬
+    alignItems: 'flex-start',
     gap: '0.3rem',
   },
   row2: {

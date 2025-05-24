@@ -34,14 +34,14 @@ function Home() {
           </div>
         </div>
 
-        <hr
+          <hr
           style={{
             width: '100%',
             maxWidth: '800px',
             borderTop: '1px solid #eee',
-            margin: '30rem auto 2rem auto',
-          }}
-        />
+            margin: '3rem auto 2rem auto',
+          }}/>
+
 
         <div style={{ textAlign: 'center', marginTop: '1rem' }}>
           <h1 style={{ ...styles.bottom, margin: 0 }}>

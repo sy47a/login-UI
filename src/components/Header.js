@@ -4,12 +4,14 @@ function Header({ hideTitle }) {
   return (
     <header style={styles.header}>
       <nav style={styles.nav}>
-        <div style={styles.leftMenu}>
-          <a href="/" style={{ ...styles.boxLink, ...styles.homeBox, color: 'black' }}>홈</a>
-          <button style={{ ...styles.boxLink, ...styles.recBox, color: 'black' }}>추천 명소</button>
-          <a href="/login" style={{ ...styles.boxLink, ...styles.signBox, color: 'black' }}>회원가입/로그인</a>
+        <div style={styles.centerMenuWrapper}>
+          <div style={styles.leftMenu}>
+            <a href="/" style={{ ...styles.boxLink, ...styles.homeBox, color: 'black' }}>홈</a>
+            <button style={{ ...styles.boxLink, ...styles.recBox, color: 'black' }}>추천 명소</button>
+            <a href="/login" style={{ ...styles.boxLink, ...styles.signBox, color: 'black' }}>회원가입/로그인</a>
+          </div>
         </div>
-        <button style={{ ...styles.boxLink, ...styles.AIrecBox, marginLeft: 'auto', color: 'white' }}>
+        <button style={{ ...styles.boxLink, ...styles.AIrecBox, color: 'white' }}>
           AI추천 시작
         </button>
       </nav>
@@ -34,12 +36,17 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: '1rem',
-    padding: '0 1rem',
+    padding: '0 2rem',
+  },
+  centerMenuWrapper: {
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    marginLeft: '8rem',
   },
   leftMenu: {
     display: 'flex',
     gap: '1rem',
-    marginLeft: '15.5rem',
   },
   boxLink: {
     display: 'inline-flex',
